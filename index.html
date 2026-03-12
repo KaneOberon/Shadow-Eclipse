@@ -34,12 +34,13 @@
             <a onclick="navigateTo(1)" class="nav-link cursor-pointer">LORE</a>
             <a onclick="navigateTo(2)" class="nav-link cursor-pointer">EMPEROR & HONOUR GUARD</a>
             <a onclick="navigateTo(3)" class="nav-link cursor-pointer">PRAETORIAN LORDS</a>
-            <a onclick="navigateTo(4)" class="nav-link cursor-pointer">CAPTAINS</a>
-            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">BARRACKS</a>
-            <a onclick="navigateTo(6)" class="nav-link cursor-pointer">SPACE SHIPS</a>
-            <a onclick="navigateTo(7)" class="nav-link cursor-pointer">AIRCRAFT</a>
-            <a onclick="navigateTo(8)" class="nav-link cursor-pointer">GROUND VEHICLES</a>
-            <a onclick="navigateTo(9)" class="nav-link cursor-pointer">DISTRICTS</a>
+            <a onclick="navigateTo(4)" class="nav-link cursor-pointer">PRAETORIAN GUARDS</a>
+            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">CAPTAINS</a>
+            <a onclick="navigateTo(6)" class="nav-link cursor-pointer">BARRACKS</a>
+            <a onclick="navigateTo(7)" class="nav-link cursor-pointer">SPACE SHIPS</a>
+            <a onclick="navigateTo(8)" class="nav-link cursor-pointer">AIRCRAFT</a>
+            <a onclick="navigateTo(9)" class="nav-link cursor-pointer">GROUND VEHICLES</a>
+            <a onclick="navigateTo(10)" class="nav-link cursor-pointer">DISTRICTS</a>
         </div>
         <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-yellow-400"><i class="fa-solid fa-bars"></i></button>
     </div>
@@ -50,12 +51,13 @@
     <button onclick="navigateTo(1);toggleMobileMenu()" class="hover:text-yellow-400">LORE</button>
     <button onclick="navigateTo(2);toggleMobileMenu()" class="hover:text-yellow-400">EMPEROR & HONOUR GUARD</button>
     <button onclick="navigateTo(3);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN LORDS</button>
-    <button onclick="navigateTo(4);toggleMobileMenu()" class="hover:text-yellow-400">CAPTAINS</button>
-    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-yellow-400">BARRACKS</button>
-    <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-yellow-400">SPACE SHIPS</button>
-    <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-yellow-400">AIRCRAFT</button>
-    <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-yellow-400">GROUND VEHICLES</button>
-    <button onclick="navigateTo(9);toggleMobileMenu()" class="hover:text-yellow-400">DISTRICTS</button>
+    <button onclick="navigateTo(4);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN GUARDS</button>
+    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-yellow-400">CAPTAINS</button>
+    <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-yellow-400">BARRACKS</button>
+    <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-yellow-400">SPACE SHIPS</button>
+    <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-yellow-400">AIRCRAFT</button>
+    <button onclick="navigateTo(9);toggleMobileMenu()" class="hover:text-yellow-400">GROUND VEHICLES</button>
+    <button onclick="navigateTo(10);toggleMobileMenu()" class="hover:text-yellow-400">DISTRICTS</button>
     <button onclick="toggleMobileMenu()" class="mt-12 text-yellow-400">CLOSE MENU</button>
 </div>
 
@@ -129,8 +131,32 @@
     </div>
 </div>
 
-<!-- PAGE 4: CAPTAINS -->
-<div id="page-4" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/captains-bg.jpg')">
+<!-- PAGE 4: PRAETORIAN GUARDS (NEW) -->
+<div id="page-4" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/praetorian-guards-bg.jpg')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">PRAETORIAN GUARDS</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Varian Thalos\'s Guard','Elite Shield-Bearers','images/praetorian-guards-varian-thalos.jpg','Unbreakable defensive phalanx sworn to Lord Varian Thalos. Armed with heavy shields and swords, they form the living wall around the Emperor.')">
+                <img src="images/praetorian-guards-varian-thalos.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Varian Thalos's Guard</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lady Seraphine Korr\'s Guard','Shadow Blade Operatives','images/praetorian-guards-seraphine-korr.jpg','Stealth assassins of Lady Seraphine Korr. Cloaked in darkness, wielding curved blades for silent elimination missions.')">
+                <img src="images/praetorian-guards-seraphine-korr.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lady Seraphine Korr's Guard</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Malrik Solan\'s Guard','Counter-Intelligence Enforcers','images/praetorian-guards-malrik-solan.jpg','Red-eyed elite operatives of Lord Malrik Solan. Heavy armor and rifles for covert protection and threat elimination.')">
+                <img src="images/praetorian-guards-malrik-solan.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Malrik Solan's Guard</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Tiber Kael\'s Guard','Forge Hammer Wardens','images/praetorian-guards-tiber-kael.jpg','Heavy hammer-wielding protectors of Lord Tiber Kael. Forged in the industrial fires, they crush any threat to the armory.')">
+                <img src="images/praetorian-guards-tiber-kael.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Tiber Kael's Guard</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Alaric Vorn\'s Guard','Ceremonial Archive Wardens','images/praetorian-guards-alaric-vorn.jpg','Elegant staff-bearing guardians of Lord Alaric Vorn. Protect the Forbidden Archives with glowing ceremonial weapons and ancient knowledge.')">
+                <img src="images/praetorian-guards-alaric-vorn.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Alaric Vorn's Guard</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 5: CAPTAINS -->
+<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/captains-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">CAPTAINS</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -162,8 +188,8 @@
     </div>
 </div>
 
-<!-- PAGE 5: BARRACKS -->
-<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/barracks-bg.jpg')">
+<!-- PAGE 6: BARRACKS -->
+<div id="page-6" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/barracks-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">BARRACKS</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -195,32 +221,32 @@
     </div>
 </div>
 
-<!-- PAGE 6: SPACE SHIPS -->
-<div id="page-6" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/spaceships-bg.jpg')">
+<!-- PAGE 7: SPACE SHIPS -->
+<div id="page-7" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/spaceships-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">SPACE SHIPS</h2>
         <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">Send me ship names + filenames and I will instantly add the full cards.</div>
     </div>
 </div>
 
-<!-- PAGE 7: AIRCRAFT -->
-<div id="page-7" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/aircraft-bg.jpg')">
+<!-- PAGE 8: AIRCRAFT -->
+<div id="page-8" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/aircraft-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">AIRCRAFT</h2>
         <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">Send me aircraft names + filenames and I will instantly add the full cards.</div>
     </div>
 </div>
 
-<!-- PAGE 8: GROUND VEHICLES -->
-<div id="page-8" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/ground-vehicles-bg.jpg')">
+<!-- PAGE 9: GROUND VEHICLES -->
+<div id="page-9" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/ground-vehicles-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">GROUND VEHICLES</h2>
         <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">Send me vehicle names + filenames and I will instantly add the full cards.</div>
     </div>
 </div>
 
-<!-- PAGE 9: DISTRICTS -->
-<div id="page-9" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/districts-bg.jpg')">
+<!-- PAGE 10: DISTRICTS -->
+<div id="page-10" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/districts-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">DISTRICTS</h2>
         <div class="space-y-12">

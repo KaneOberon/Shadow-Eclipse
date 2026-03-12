@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHADOW ECLIPSE • ECLIPSED SHADOW ARCHIVES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;700&display=swap');
+        body { font-family: 'Roboto Mono', monospace; }
+        .nav-link { position: relative; transition: all 0.3s ease; }
+        .nav-link:after { content: ''; position: absolute; width: 0; height: 2px; bottom: -2px; left: 0; background-color: #eab308; transition: width 0.3s ease; }
+        .nav-link:hover:after { width: 100%; }
+        .page { min-height: 100vh; background-size: cover; background-position: center; background-attachment: fixed; }
+        .section-header { position: relative; display: inline-block; }
+        .section-header:after { content: ''; position: absolute; width: 70%; height: 4px; background: linear-gradient(to right, #eab308, transparent); bottom: -8px; left: 15%; }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-15px) scale(1.04); box-shadow: 0 0 50px -10px #eab308; }
+        .modal { animation: modalPop 0.4s ease forwards; }
+        @keyframes modalPop { from { transform: scale(0.6) translateY(50px); opacity: 0; } to { transform: scale(1) translateY(0); opacity: 1; } }
+    </style>
+</head>
+<body class="bg-black text-slate-200 overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-xl border-b border-yellow-400/30">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+        <div onclick="navigateTo(0)" class="flex items-center gap-x-4 cursor-pointer">
+            <div class="w-11 h-11 bg-yellow-500 rounded-full flex items-center justify-center text-black font-black text-3xl shadow-[0_0_25px_#eab308]">SE</div>
+            <div class="leading-none"><span class="text-3xl font-bold tracking-[6px] text-yellow-400">SE</span><span class="block text-[10px] text-slate-400 -mt-1">SHADOW ECLIPSE ARCHIVES</span></div>
+        </div>
+        <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+            <a onclick="navigateTo(1)" class="nav-link cursor-pointer">LORE</a>
+            <a onclick="navigateTo(2)" class="nav-link cursor-pointer">EMPEROR & HONOUR GUARD</a>
+            <a onclick="navigateTo(3)" class="nav-link cursor-pointer">PRAETORIAN LORDS</a>
+            <a onclick="navigateTo(4)" class="nav-link cursor-pointer">CAPTAINS</a>
+            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">BUILDINGS</a>
+            <a onclick="navigateTo(6)" class="nav-link cursor-pointer">SPACE SHIPS</a>
+            <a onclick="navigateTo(7)" class="nav-link cursor-pointer">AIRCRAFT</a>
+            <a onclick="navigateTo(8)" class="nav-link cursor-pointer">GROUND VEHICLES</a>
+            <a onclick="navigateTo(9)" class="nav-link cursor-pointer">DISTRICTS</a>
+        </div>
+        <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-yellow-400"><i class="fa-solid fa-bars"></i></button>
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed inset-0 bg-black/95 z-[999] flex flex-col items-center justify-center gap-8 text-2xl md:hidden">
+    <button onclick="navigateTo(1);toggleMobileMenu()" class="hover:text-yellow-400">LORE</button>
+    <button onclick="navigateTo(2);toggleMobileMenu()" class="hover:text-yellow-400">EMPEROR & HONOUR GUARD</button>
+    <button onclick="navigateTo(3);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN LORDS</button>
+    <button onclick="navigateTo(4);toggleMobileMenu()" class="hover:text-yellow-400">CAPTAINS</button>
+    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-yellow-400">BUILDINGS</button>
+    <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-yellow-400">SPACE SHIPS</button>
+    <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-yellow-400">AIRCRAFT</button>
+    <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-yellow-400">GROUND VEHICLES</button>
+    <button onclick="navigateTo(9);toggleMobileMenu()" class="hover:text-yellow-400">DISTRICTS</button>
+    <button onclick="toggleMobileMenu()" class="mt-12 text-yellow-400">CLOSE MENU</button>
+</div>
+
+<!-- PAGE 0: HERO -->
+<div id="page-0" class="page flex items-center relative" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/1920/1080')">
+    <div class="max-w-5xl mx-auto px-8 text-center pt-20">
+        <div class="inline-flex items-center gap-3 bg-black/70 px-8 py-3 rounded-full border border-yellow-400 mb-8">
+            <span class="text-xs tracking-widest font-bold text-yellow-400">ETERNAL ECLIPSE • OFFICIAL ARCHIVES</span>
+        </div>
+        <h1 class="text-7xl md:text-8xl font-black tracking-tighter leading-none text-white">SHADOW<br>ECLIPSE</h1>
+        <p class="mt-6 text-3xl text-yellow-300">"We are the Eclipsed Shadow"</p>
+        <div class="mt-16 flex flex-wrap gap-6 justify-center">
+            <button onclick="navigateTo(2)" class="px-12 py-6 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-xl flex items-center gap-4 transition-all">MEET THE EMPEROR</button>
+            <button onclick="navigateTo(1)" class="px-12 py-6 border-2 border-white/70 hover:border-yellow-400 text-white font-medium text-xl transition-all">ENTER THE ARCHIVES</button>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 1: LORE - YOUR FULL LORE -->
+<div id="page-1" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/133/1920/1080')">
+    <div class="max-w-4xl mx-auto px-8 pt-32 pb-20 text-lg text-slate-300 leading-relaxed">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">THE SHADOW ECLIPSE LORE</h2>
+        
+        <h3 class="text-yellow-400 text-3xl mt-12 mb-6 font-bold">"Empires are not destroyed by defeat — only revealed by it." — Imperial Maxim, 1st Cycle Archives</h3>
+        <p class="mb-10">Thousands of years ago, the Imperial Core ruled the galaxy through might and faith. At its head stood the High Imperator Solen Alistar, father of the current Emperor. The Imperium stretched across hundreds of systems — each a fortress-world, each bound by the will of the Throne. But then came the Coalition Rebellion, a unification of free systems and rogue AI enclaves that rejected Imperial command. The war burned for three centuries, consuming stars and worlds alike. Solen Varr’s forces were unmatched — legions of gold-armored soldiers, fleets the size of continents — yet hubris and betrayal fractured the command structure. One by one, the loyal sectors fell. The final blow came at the Siege of Varrion Prime, where the Imperial homeworld was scoured from orbit in a combined strike. The Emperor’s father was slain, and the heir — then known as Prince Quinn Alistar — vanished amid the firestorms.</p>
+        
+        <h3 class="text-yellow-400 text-3xl mt-12 mb-6 font-bold">PHASE II — THE EMPEROR’S EXILE AND RISE</h3>
+        <p class="mb-10">The galaxy believed him dead. In truth, Quinn Alistar survived — evacuated by a remnant of the Ex-Legion and the remaining Honour Guard. Driven into exile beyond the charted rim, the Prince witnessed what his father could not: that open empire breeds rebellion, but invisible empire endures forever. He swore an oath in exile — not to rebuild what was lost, but to forge something eternal, unseen until the moment of total domination. Over millennia, his legend became myth, and myth became silence. He took a new name: The Eternal Emperor — a ruler of no borders, yet master of countless worlds.</p>
+        
+        <h3 class="text-yellow-400 text-3xl mt-12 mb-6 font-bold">PHASE III — THE SILENT RECLAMATION</h3>
+        <p class="mb-10">While the galaxy rebuilt itself, the Emperor’s agents worked unseen. Through manipulation, trade, infiltration, and shadow governance, the Emperor began seeding control across forgotten sectors. Entire civilizations became unwitting arms of his will. Asteroid colonies built weapon platforms disguised as mining stations. Planets beneath barren surfaces hid entire mechanized legions within colossal subterranean bays — the Vault Worlds. Each Vault World served as a self-contained production citadel, growing his armies in secret. Some were buried under ice caps, others beneath volcanic mantles, all connected by Aether Gates, invisible FTL corridors guarded by his most trusted commanders. To the wider galaxy, they appeared as dead systems — silent, uninhabited. To the Emperor, they were the seeds of reclamation. The Exo-Legionnaires, cybernetically augmented descendants of his father’s guard, became his chosen instruments — enforcing his will, executing his quiet conquests, and purging all who threatened exposure. Meanwhile, the Honour Guard formed the inner circle — fanatically loyal, their golden cloaks hiding both their arms and their vows. Each guardsman would willingly die before letting the Emperor’s existence be revealed. For thousands of years, the Eternal Emperor waited — building an empire not of stars, but of silence and steel beneath them.</p>
+    </div>
+</div>
+
+<!-- PAGE 2: EMPEROR & HONOUR GUARD -->
+<div id="page-2" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/201/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">THE ASCENDANT EMPEROR & HONOUR GUARD</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('The Eternal Emperor','Ascendant Ruler of the Eclipsed Shadow','images/emperor-quinn-alistar.jpg','They called him once a prince; they call him now the Ascendant Emperor... Varrion Prime burned. His father fell with the final order: “Protect the bloodline.” The Honour Guard fought to Hangar Epsilon-9 and the Seraph’s Wing. Centuries later he returned as the Eternal Emperor — ruler of hidden fleets and buried legions awaiting one command: “Ascend.”')">
+                <img src="images/emperor-quinn-alistar.jpg" class="w-full h-64 object-cover mb-6 rounded">
+                <h3 class="text-3xl font-bold text-yellow-400">The Eternal Emperor</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Praetor Caelus Varin','Captain of the Honour Guard','images/praetor-caelus-varin.jpg','The man who led the extraction from Varrion Prime. Still stands at the Emperor’s right hand, bearing the scorch marks of that final night. His loyalty was forged in fire and sealed in silence.')">
+                <img src="images/praetor-caelus-varin.jpg" class="w-full h-64 object-cover mb-6 rounded">
+                <h3 class="text-3xl font-bold text-yellow-400">Praetor Caelus Varin</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 3: PRAETORIAN LORDS -->
+<div id="page-3" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/160/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">PRAETORIAN LORDS</h2>
+        <div class="prose prose-invert max-w-4xl mx-auto mb-16 text-slate-300 text-lg">
+            <p>When the Old Emperor fell and the Imperial Palace burned, the line of succession was thought ended. But amidst the smoke and ruin, a fragment of the Legion endured — six elite Legionaries alongside the last surviving Honor Guard... They became the First Praetorian Lords — the Emperor’s shield and sword...</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Varian Thalos','Grand Commander of the Praetorian Guard','images/praetorian-varian-thalos.jpg','One of the original six who formed the living wall around the young prince on Varrion Prime. Grand Commander of the Praetorian Guard. Master of defensive warfare and personal combat.')">
+                <img src="images/praetorian-varian-thalos.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Varian Thalos</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lady Seraphine Korr','High Commander of the Imperial Special Forces Division','images/praetorian-seraphine-korr.jpg','High Commander of the Imperial Special Forces Division. Stealth operative and assassin extraordinaire. Trained in shadow infiltration and cyber-augmented combat.')">
+                <img src="images/praetorian-seraphine-korr.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lady Seraphine Korr</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Tiber Kael','Lord of the Industrial Forge and Armory Divisions','images/praetorian-tiber-kael.jpg','Lord of the Industrial Forge and Armory Divisions. Master smith and war-engineer. Forges the weapons and armor for the entire Exo-Legion.')">
+                <img src="images/praetorian-tiber-kael.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Tiber Kael</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Malrik Solan','Director of Counter-Intelligence','images/praetorian-malrik-solan.jpg','Director of Counter-Intelligence. The eyes and ears of the Emperor in the shadows. Master of deception and eliminating threats before they surface.')">
+                <img src="images/praetorian-malrik-solan.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Malrik Solan</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lord Alaric Vorn','Keeper of the Chronicles and Custodian of the Forbidden Archives','images/praetorian-alaric-vorn.jpg','Keeper of the Chronicles and Custodian of the Forbidden Archives. The living memory of the Empire. Preserves the lost knowledge of the old Imperium.')">
+                <img src="images/praetorian-alaric-vorn.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lord Alaric Vorn</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 4: CAPTAINS - ALL 8 DIVISIONS -->
+<div id="page-4" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/203/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">CAPTAINS</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Trench Division Captain','Standard Infantry Division','images/captain-trench-division.jpg','Backbone of the Shadow Eclipse ground forces. Leads relentless trench assaults with combat sword and sidearm. Unbreakable in the mud and fire of the Vault Worlds.')">
+                <img src="images/captain-trench-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Trench Division Captain</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Imperial Division Captain','Heavy Assault Division','images/captain-imperial-division.jpg','Elite heavy infantry. Wields assault rifles and reinforced power armor to smash through any defensive line.')">
+                <img src="images/captain-imperial-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Imperial Division Captain</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Eradication Division Captain','Flamer Purge Division','images/captain-eradication-division.jpg','Purge specialists armed with dual flame throwers. Leaves nothing but ash in their wake.')">
+                <img src="images/captain-eradication-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Eradication Division Captain</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Phantom Division Captain','Marksmen Division','images/captain-phantom-division.jpg','Silent long-range killers. Precision snipers who end threats before they are even seen.')">
+                <img src="images/captain-phantom-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Phantom Division Captain</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lunar Division Captain','Medical & Support Division','images/captain-lunar-division.jpg','Healers of the Eclipse. Deploy advanced healing drones and keep the legions fighting far beyond human limits.')">
+                <img src="images/captain-lunar-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lunar Division Captain</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Overwatch Division Captain','Sword Melee Division','images/captain-overwatch-division.jpg','Dual energy-sword masters. Lightning-fast close-combat specialists who carve through enemy ranks.')">
+                <img src="images/captain-overwatch-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Overwatch Division Captain</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Sentinel Division Captain','Hammer Melee Division','images/captain-sentinel-division.jpg','Crushing force specialists. Wield anti-grav hammer and powered gauntlet to shatter armor and morale.')">
+                <img src="images/captain-sentinel-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Sentinel Division Captain</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Viridian Warden Captain','Throne Room Guard Division','images/captain-viridian-warden.jpg','Elite protectors of the Emperor. Large axe and shield — the final unbreakable wall around the Eternal Throne.')">
+                <img src="images/captain-viridian-warden.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Viridian Warden Captain</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 5: BUILDINGS (ready for your data) -->
+<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/29/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">BUILDINGS</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">
+            Send Citadel, Barracks, Space-Buildings names + filenames and I will add the cards instantly.
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 6: SPACE SHIPS -->
+<div id="page-6" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/870/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">SPACE SHIPS</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">
+            Send ship names + filenames and I will add them.
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 7: AIRCRAFT -->
+<div id="page-7" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/160/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">AIRCRAFT</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">
+            Send aircraft names + filenames and I will create the cards.
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 8: GROUND VEHICLES -->
+<div id="page-8" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/201/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">GROUND VEHICLES</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">
+            Send vehicle names + filenames and I will fill this page.
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 9: DISTRICTS -->
+<div id="page-9" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/133/1920/1080')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">DISTRICTS</h2>
+        <div class="space-y-12">
+            <div class="flex flex-col md:flex-row gap-8 bg-zinc-900 p-10 border-l-8 border-yellow-400">
+                <div class="md:w-64"><div class="text-4xl font-black text-yellow-400">CIVILIAN DISTRICTS</div></div>
+                <div class="flex-1 text-slate-300">Under perpetual shadow control. Citizens live in perfect order under eclipse law.</div>
+            </div>
+            <!-- Add the other districts the same way once you send details -->
+        </div>
+    </div>
+</div>
+
+<!-- MODAL -->
+<div onclick="if(event.target.id==='modal') closeModal()" id="modal" class="hidden fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center">
+    <div onclick="event.stopImmediatePropagation()" class="modal max-w-2xl w-full mx-4 bg-zinc-900 p-10 border border-yellow-400">
+        <button onclick="closeModal()" class="float-right text-4xl text-slate-400">×</button>
+        <div id="modal-body" class="pt-8"></div>
+    </div>
+</div>
+
+<script>
+    function navigateTo(pageIndex) {
+        document.querySelectorAll('.page').forEach((p, i) => p.classList.toggle('hidden', i !== pageIndex));
+        window.scrollTo(0, 0);
+    }
+    function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
+    function showDetailModal(title, subtitle, img, desc) {
+        const modal = document.getElementById('modal');
+        const body = document.getElementById('modal-body');
+        body.innerHTML = `<img src="${img}" class="w-full rounded mb-8"><h3 class="text-4xl font-black text-yellow-400">${title}</h3><p class="text-yellow-300">${subtitle}</p><div class="text-slate-300 mt-6 leading-relaxed">${desc}</div>`;
+        modal.classList.remove('hidden'); modal.classList.add('flex');
+    }
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.classList.add('hidden'); modal.classList.remove('flex');
+    }
+    document.addEventListener('keydown', e => { if (e.key === "Escape") closeModal(); });
+    window.onload = () => { navigateTo(0); };
+</script>
+</body>
+</html>

@@ -35,7 +35,7 @@
             <a onclick="navigateTo(2)" class="nav-link cursor-pointer">EMPEROR & HONOUR GUARD</a>
             <a onclick="navigateTo(3)" class="nav-link cursor-pointer">PRAETORIAN LORDS</a>
             <a onclick="navigateTo(4)" class="nav-link cursor-pointer">CAPTAINS</a>
-            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">BUILDINGS</a>
+            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">BARRACKS</a>
             <a onclick="navigateTo(6)" class="nav-link cursor-pointer">SPACE SHIPS</a>
             <a onclick="navigateTo(7)" class="nav-link cursor-pointer">AIRCRAFT</a>
             <a onclick="navigateTo(8)" class="nav-link cursor-pointer">GROUND VEHICLES</a>
@@ -51,7 +51,7 @@
     <button onclick="navigateTo(2);toggleMobileMenu()" class="hover:text-yellow-400">EMPEROR & HONOUR GUARD</button>
     <button onclick="navigateTo(3);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN LORDS</button>
     <button onclick="navigateTo(4);toggleMobileMenu()" class="hover:text-yellow-400">CAPTAINS</button>
-    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-yellow-400">BUILDINGS</button>
+    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-yellow-400">BARRACKS</button>
     <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-yellow-400">SPACE SHIPS</button>
     <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-yellow-400">AIRCRAFT</button>
     <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-yellow-400">GROUND VEHICLES</button>
@@ -78,13 +78,10 @@
 <div id="page-1" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/lore-bg.jpg')">
     <div class="max-w-4xl mx-auto px-8 pt-32 pb-20 text-lg text-slate-300 leading-relaxed">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">THE SHADOW ECLIPSE LORE</h2>
-        
         <h3 class="text-yellow-400 text-3xl mt-12 mb-6 font-bold">"Empires are not destroyed by defeat — only revealed by it." — Imperial Maxim, 1st Cycle Archives</h3>
         <p class="mb-10">Thousands of years ago, the Imperial Core ruled the galaxy through might and faith. At its head stood the High Imperator Solen Alistar, father of the current Emperor. The Imperium stretched across hundreds of systems — each a fortress-world, each bound by the will of the Throne. But then came the Coalition Rebellion, a unification of free systems and rogue AI enclaves that rejected Imperial command. The war burned for three centuries, consuming stars and worlds alike. Solen Varr’s forces were unmatched — legions of gold-armored soldiers, fleets the size of continents — yet hubris and betrayal fractured the command structure. One by one, the loyal sectors fell. The final blow came at the Siege of Varrion Prime, where the Imperial homeworld was scoured from orbit in a combined strike. The Emperor’s father was slain, and the heir — then known as Prince Quinn Alistar — vanished amid the firestorms.</p>
-        
         <h3 class="text-yellow-400 text-3xl mt-12 mb-6 font-bold">PHASE II — THE EMPEROR’S EXILE AND RISE</h3>
         <p class="mb-10">The galaxy believed him dead. In truth, Quinn Alistar survived — evacuated by a remnant of the Ex-Legion and the remaining Honour Guard. Driven into exile beyond the charted rim, the Prince witnessed what his father could not: that open empire breeds rebellion, but invisible empire endures forever. He swore an oath in exile — not to rebuild what was lost, but to forge something eternal, unseen until the moment of total domination. Over millennia, his legend became myth, and myth became silence. He took a new name: The Eternal Emperor — a ruler of no borders, yet master of countless worlds.</p>
-        
         <h3 class="text-yellow-400 text-3xl mt-12 mb-6 font-bold">PHASE III — THE SILENT RECLAMATION</h3>
         <p class="mb-10">While the galaxy rebuilt itself, the Emperor’s agents worked unseen. Through manipulation, trade, infiltration, and shadow governance, the Emperor began seeding control across forgotten sectors. Entire civilizations became unwitting arms of his will. Asteroid colonies built weapon platforms disguised as mining stations. Planets beneath barren surfaces hid entire mechanized legions within colossal subterranean bays — the Vault Worlds. Each Vault World served as a self-contained production citadel, growing his armies in secret. Some were buried under ice caps, others beneath volcanic mantles, all connected by Aether Gates, invisible FTL corridors guarded by his most trusted commanders. To the wider galaxy, they appeared as dead systems — silent, uninhabited. To the Emperor, they were the seeds of reclamation. The Exo-Legionnaires, cybernetically augmented descendants of his father’s guard, became his chosen instruments — enforcing his will, executing his quiet conquests, and purging all who threatened exposure. Meanwhile, the Honour Guard formed the inner circle — fanatically loyal, their golden cloaks hiding both their arms and their vows. Each guardsman would willingly die before letting the Emperor’s existence be revealed. For thousands of years, the Eternal Emperor waited — building an empire not of stars, but of silence and steel beneath them.</p>
     </div>
@@ -96,12 +93,10 @@
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">THE ASCENDANT EMPEROR & HONOUR GUARD</h2>
         <div class="grid md:grid-cols-2 gap-8">
             <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('The Eternal Emperor','Ascendant Ruler of the Eclipsed Shadow','images/emperor-quinn-alistar.jpg','They called him once a prince; they call him now the Ascendant Emperor. Varrion Prime burned. His father fell with the final order: “Protect the bloodline.” The Honour Guard fought to Hangar Epsilon-9 and the Seraph’s Wing. Centuries later he returned as the Eternal Emperor — ruler of hidden fleets and buried legions awaiting one command: “Ascend.”')">
-                <img src="images/emperor-quinn-alistar.jpg" class="w-full h-64 object-cover mb-6 rounded">
-                <h3 class="text-3xl font-bold text-yellow-400">The Eternal Emperor</h3>
+                <img src="images/emperor-quinn-alistar.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">The Eternal Emperor</h3>
             </div>
             <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Praetor Caelus Varin','Captain of the Honour Guard','images/praetor-caelus-varin.jpg','The man who led the extraction from Varrion Prime. Still stands at the Emperor’s right hand, bearing the scorch marks of that final night. His loyalty was forged in fire and sealed in silence.')">
-                <img src="images/praetor-caelus-varin.jpg" class="w-full h-64 object-cover mb-6 rounded">
-                <h3 class="text-3xl font-bold text-yellow-400">Praetor Caelus Varin</h3>
+                <img src="images/praetor-caelus-varin.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Praetor Caelus Varin</h3>
             </div>
         </div>
     </div>
@@ -139,39 +134,64 @@
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">CAPTAINS</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Trench Division Captain','Standard Infantry Division','images/captain-trench-division.jpg','Backbone of the Shadow Eclipse ground forces. Leads relentless trench assaults with combat sword and sidearm. Unbreakable in the mud and fire of the Vault Worlds.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Trench Division Captain','Standard Infantry Division','images/captain-trench-division.jpg','Backbone of the Shadow Eclipse ground forces. Leads relentless trench assaults with combat sword and sidearm.')">
                 <img src="images/captain-trench-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Trench Division Captain</h3>
             </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Imperial Division Captain','Heavy Assault Division','images/captain-imperial-division.jpg','Elite heavy infantry. Wields assault rifles and reinforced power armor to smash through any defensive line.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Imperial Division Captain','Heavy Assault Division','images/captain-imperial-division.jpg','Elite heavy infantry. Wields assault rifles and reinforced power armor.')">
                 <img src="images/captain-imperial-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Imperial Division Captain</h3>
             </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Eradication Division Captain','Flamer Purge Division','images/captain-eradication-division.jpg','Purge specialists armed with dual flame throwers. Leaves nothing but ash in their wake.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Eradication Division Captain','Flamer Purge Division','images/captain-eradication-division.jpg','Purge specialists armed with dual flame throwers.')">
                 <img src="images/captain-eradication-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Eradication Division Captain</h3>
             </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Phantom Division Captain','Marksmen Division','images/captain-phantom-division.jpg','Silent long-range killers. Precision snipers who end threats before they are even seen.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Phantom Division Captain','Marksmen Division','images/captain-phantom-division.jpg','Silent long-range killers. Precision snipers.')">
                 <img src="images/captain-phantom-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Phantom Division Captain</h3>
             </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lunar Division Captain','Medical & Support Division','images/captain-lunar-division.jpg','Healers of the Eclipse. Deploy advanced healing drones and keep the legions fighting far beyond human limits.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lunar Division Captain','Medical & Support Division','images/captain-lunar-division.jpg','Healers of the Eclipse. Deploy advanced healing drones.')">
                 <img src="images/captain-lunar-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lunar Division Captain</h3>
             </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Overwatch Division Captain','Sword Melee Division','images/captain-overwatch-division.jpg','Dual energy-sword masters. Lightning-fast close-combat specialists who carve through enemy ranks.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Overwatch Division Captain','Sword Melee Division','images/captain-overwatch-division.jpg','Dual energy-sword masters. Lightning-fast close-combat specialists.')">
                 <img src="images/captain-overwatch-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Overwatch Division Captain</h3>
             </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Sentinel Division Captain','Hammer Melee Division','images/captain-sentinel-division.jpg','Crushing force specialists. Wield anti-grav hammer and powered gauntlet to shatter armor and morale.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Sentinel Division Captain','Hammer Melee Division','images/captain-sentinel-division.jpg','Crushing force specialists. Wield anti-grav hammer and powered gauntlet.')">
                 <img src="images/captain-sentinel-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Sentinel Division Captain</h3>
             </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Viridian Warden Captain','Throne Room Guard Division','images/captain-viridian-warden.jpg','Elite protectors of the Emperor. Large axe and shield — the final unbreakable wall around the Eternal Throne.')">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Viridian Warden Captain','Throne Room Guard Division','images/captain-viridian-warden.jpg','Elite protectors of the Emperor. Large axe and shield — the final unbreakable wall.')">
                 <img src="images/captain-viridian-warden.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Viridian Warden Captain</h3>
             </div>
         </div>
     </div>
 </div>
 
-<!-- PAGE 5: BUILDINGS -->
-<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/buildings-bg.jpg')">
+<!-- PAGE 5: BARRACKS -->
+<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/barracks-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
-        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">BUILDINGS</h2>
-        <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">Send me building names + filenames and I will instantly add the full cards.</div>
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">BARRACKS</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Trench Division Barracks','Standard Infantry Division','images/barracks-trench-division.jpg','The primary barracks for the Trench Division. Houses the standard infantry legions trained for brutal close-quarters trench warfare with sword and handgun.')">
+                <img src="images/barracks-trench-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Trench Division Barracks</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Imperial Division Barracks','Heavy Assault Division','images/barracks-imperial-division.jpg','Heavy assault barracks for the Imperial Division. Equipped with reinforced power armor and assault rifles.')">
+                <img src="images/barracks-imperial-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Imperial Division Barracks</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Eradication Division Barracks','Flamer Purge Division','images/barracks-eradication-division.jpg','Purge barracks for the Eradication Division. Home to dual-flame specialists who leave only ash in their wake.')">
+                <img src="images/barracks-eradication-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Eradication Division Barracks</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Phantom Division Barracks','Marksmen Division','images/barracks-phantom-division.jpg','Stealth barracks for the Phantom Division. Precision snipers who strike unseen from the shadows.')">
+                <img src="images/barracks-phantom-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Phantom Division Barracks</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Lunar Division Barracks','Medical & Support Division','images/barracks-lunar-division.jpg','Medical barracks for the Lunar Division. Equipped with advanced healing drones to keep the legions fighting far beyond human limits.')">
+                <img src="images/barracks-lunar-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Lunar Division Barracks</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Overwatch Division Barracks','Sword Melee Division','images/barracks-overwatch-division.jpg','Melee barracks for the Overwatch Division. Home to dual energy-sword masters who carve through enemy ranks.')">
+                <img src="images/barracks-overwatch-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Overwatch Division Barracks</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Sentinel Division Barracks','Hammer Melee Division','images/barracks-sentinel-division.jpg','Crushing-force barracks for the Sentinel Division. Houses the anti-grav hammer and gauntlet specialists.')">
+                <img src="images/barracks-sentinel-division.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Sentinel Division Barracks</h3>
+            </div>
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Viridian Warden Barracks','Throne Room Guard Division','images/barracks-viridian-warden.jpg','Elite throne-room barracks for the Viridian Warden Division. The final unbreakable wall armed with large axe and shield.')">
+                <img src="images/barracks-viridian-warden.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Viridian Warden Barracks</h3>
+            </div>
+        </div>
     </div>
 </div>
 

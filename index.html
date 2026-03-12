@@ -32,15 +32,16 @@
         </div>
         <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
             <a onclick="navigateTo(1)" class="nav-link cursor-pointer">LORE</a>
-            <a onclick="navigateTo(2)" class="nav-link cursor-pointer">EMPEROR & HONOUR GUARD</a>
-            <a onclick="navigateTo(3)" class="nav-link cursor-pointer">PRAETORIAN LORDS</a>
-            <a onclick="navigateTo(4)" class="nav-link cursor-pointer">PRAETORIAN GUARDS</a>
-            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">CAPTAINS</a>
-            <a onclick="navigateTo(6)" class="nav-link cursor-pointer">BARRACKS</a>
-            <a onclick="navigateTo(7)" class="nav-link cursor-pointer">SPACE SHIPS</a>
-            <a onclick="navigateTo(8)" class="nav-link cursor-pointer">AIRCRAFT</a>
-            <a onclick="navigateTo(9)" class="nav-link cursor-pointer">GROUND VEHICLES</a>
-            <a onclick="navigateTo(10)" class="nav-link cursor-pointer">DISTRICTS</a>
+            <a onclick="navigateTo(2)" class="nav-link cursor-pointer">EMPEROR</a>
+            <a onclick="navigateTo(3)" class="nav-link cursor-pointer">HONOUR GUARD</a>
+            <a onclick="navigateTo(4)" class="nav-link cursor-pointer">PRAETORIAN LORDS</a>
+            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">PRAETORIAN GUARDS</a>
+            <a onclick="navigateTo(6)" class="nav-link cursor-pointer">CAPTAINS</a>
+            <a onclick="navigateTo(7)" class="nav-link cursor-pointer">BARRACKS</a>
+            <a onclick="navigateTo(8)" class="nav-link cursor-pointer">SPACE SHIPS</a>
+            <a onclick="navigateTo(9)" class="nav-link cursor-pointer">AIRCRAFT</a>
+            <a onclick="navigateTo(10)" class="nav-link cursor-pointer">GROUND VEHICLES</a>
+            <a onclick="navigateTo(11)" class="nav-link cursor-pointer">DISTRICTS</a>
         </div>
         <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-yellow-400"><i class="fa-solid fa-bars"></i></button>
     </div>
@@ -49,15 +50,16 @@
 <!-- MOBILE MENU -->
 <div id="mobileMenu" class="hidden fixed inset-0 bg-black/95 z-[999] flex flex-col items-center justify-center gap-8 text-2xl md:hidden">
     <button onclick="navigateTo(1);toggleMobileMenu()" class="hover:text-yellow-400">LORE</button>
-    <button onclick="navigateTo(2);toggleMobileMenu()" class="hover:text-yellow-400">EMPEROR & HONOUR GUARD</button>
-    <button onclick="navigateTo(3);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN LORDS</button>
-    <button onclick="navigateTo(4);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN GUARDS</button>
-    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-yellow-400">CAPTAINS</button>
-    <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-yellow-400">BARRACKS</button>
-    <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-yellow-400">SPACE SHIPS</button>
-    <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-yellow-400">AIRCRAFT</button>
-    <button onclick="navigateTo(9);toggleMobileMenu()" class="hover:text-yellow-400">GROUND VEHICLES</button>
-    <button onclick="navigateTo(10);toggleMobileMenu()" class="hover:text-yellow-400">DISTRICTS</button>
+    <button onclick="navigateTo(2);toggleMobileMenu()" class="hover:text-yellow-400">EMPEROR</button>
+    <button onclick="navigateTo(3);toggleMobileMenu()" class="hover:text-yellow-400">HONOUR GUARD</button>
+    <button onclick="navigateTo(4);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN LORDS</button>
+    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-yellow-400">PRAETORIAN GUARDS</button>
+    <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-yellow-400">CAPTAINS</button>
+    <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-yellow-400">BARRACKS</button>
+    <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-yellow-400">SPACE SHIPS</button>
+    <button onclick="navigateTo(9);toggleMobileMenu()" class="hover:text-yellow-400">AIRCRAFT</button>
+    <button onclick="navigateTo(10);toggleMobileMenu()" class="hover:text-yellow-400">GROUND VEHICLES</button>
+    <button onclick="navigateTo(11);toggleMobileMenu()" class="hover:text-yellow-400">DISTRICTS</button>
     <button onclick="toggleMobileMenu()" class="mt-12 text-yellow-400">CLOSE MENU</button>
 </div>
 
@@ -89,23 +91,42 @@
     </div>
 </div>
 
-<!-- PAGE 2: EMPEROR & HONOUR GUARD -->
+<!-- PAGE 2: EMPEROR (solo page as requested) -->
 <div id="page-2" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/emperor-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
-        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">THE ASCENDANT EMPEROR & HONOUR GUARD</h2>
-        <div class="grid md:grid-cols-2 gap-8">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">THE ETERNAL EMPEROR</h2>
+        <div class="max-w-md mx-auto">
             <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('The Eternal Emperor','Ascendant Ruler of the Eclipsed Shadow','images/emperor-quinn-alistar.jpg','They called him once a prince; they call him now the Ascendant Emperor. Varrion Prime burned. His father fell with the final order: “Protect the bloodline.” The Honour Guard fought to Hangar Epsilon-9 and the Seraph’s Wing. Centuries later he returned as the Eternal Emperor — ruler of hidden fleets and buried legions awaiting one command: “Ascend.”')">
                 <img src="images/emperor-quinn-alistar.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">The Eternal Emperor</h3>
-            </div>
-            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Praetor Caelus Varin','Captain of the Honour Guard','images/praetor-caelus-varin.jpg','The man who led the extraction from Varrion Prime. Still stands at the Emperor’s right hand, bearing the scorch marks of that final night. His loyalty was forged in fire and sealed in silence.')">
-                <img src="images/praetor-caelus-varin.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Praetor Caelus Varin</h3>
             </div>
         </div>
     </div>
 </div>
 
-<!-- PAGE 3: PRAETORIAN LORDS -->
-<div id="page-3" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/praetorian-bg.jpg')">
+<!-- PAGE 3: HONOUR GUARD (new dedicated page – Captain centred at top) -->
+<div id="page-3" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/honour-guard-bg.jpg')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <h2 class="section-header text-6xl font-black text-center mb-16 text-white">HONOUR GUARD</h2>
+        
+        <!-- Captain at top centre -->
+        <div class="max-w-md mx-auto mb-16">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Praetor Caelus Varin','Captain of the Honour Guard','images/honour-guard-captain-praetor-caelus-varin.jpg','The man who led the extraction from Varrion Prime. Still stands at the Emperor’s right hand, bearing the scorch marks of that final night. His loyalty was forged in fire and sealed in silence.')">
+                <img src="images/honour-guard-captain-praetor-caelus-varin.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Praetor Caelus Varin</h3>
+                <p class="text-yellow-300 text-sm mt-2">Honour Guard Captain</p>
+            </div>
+        </div>
+        
+        <!-- Honour Guard members below -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Honour Guard','Elite Personal Protectors','images/honour-guard-members.jpg','Fanatically loyal white-and-gold cloaked warriors. They form the innermost circle of protection around the Eternal Emperor and would willingly die before letting his existence be revealed.')">
+                <img src="images/honour-guard-members.jpg" class="w-full h-64 object-cover mb-6 rounded"><h3 class="text-3xl font-bold text-yellow-400">Honour Guard</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 4: PRAETORIAN LORDS -->
+<div id="page-4" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/praetorian-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">PRAETORIAN LORDS</h2>
         <div class="prose prose-invert max-w-4xl mx-auto mb-16 text-slate-300 text-lg">
@@ -131,8 +152,8 @@
     </div>
 </div>
 
-<!-- PAGE 4: PRAETORIAN GUARDS (NEW) -->
-<div id="page-4" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/praetorian-guards-bg.jpg')">
+<!-- PAGE 5: PRAETORIAN GUARDS -->
+<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/praetorian-guards-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">PRAETORIAN GUARDS</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -155,8 +176,8 @@
     </div>
 </div>
 
-<!-- PAGE 5: CAPTAINS -->
-<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/captains-bg.jpg')">
+<!-- PAGE 6: CAPTAINS -->
+<div id="page-6" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/captains-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">CAPTAINS</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -188,8 +209,8 @@
     </div>
 </div>
 
-<!-- PAGE 6: BARRACKS -->
-<div id="page-6" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/barracks-bg.jpg')">
+<!-- PAGE 7: BARRACKS -->
+<div id="page-7" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/barracks-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">BARRACKS</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -221,32 +242,32 @@
     </div>
 </div>
 
-<!-- PAGE 7: SPACE SHIPS -->
-<div id="page-7" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/spaceships-bg.jpg')">
+<!-- PAGE 8: SPACE SHIPS -->
+<div id="page-8" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/spaceships-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">SPACE SHIPS</h2>
         <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">Send me ship names + filenames and I will instantly add the full cards.</div>
     </div>
 </div>
 
-<!-- PAGE 8: AIRCRAFT -->
-<div id="page-8" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/aircraft-bg.jpg')">
+<!-- PAGE 9: AIRCRAFT -->
+<div id="page-9" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/aircraft-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">AIRCRAFT</h2>
         <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">Send me aircraft names + filenames and I will instantly add the full cards.</div>
     </div>
 </div>
 
-<!-- PAGE 9: GROUND VEHICLES -->
-<div id="page-9" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/ground-vehicles-bg.jpg')">
+<!-- PAGE 10: GROUND VEHICLES -->
+<div id="page-10" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/ground-vehicles-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">GROUND VEHICLES</h2>
         <div class="grid md:grid-cols-3 gap-8 text-center text-slate-400 italic py-12">Send me vehicle names + filenames and I will instantly add the full cards.</div>
     </div>
 </div>
 
-<!-- PAGE 10: DISTRICTS -->
-<div id="page-10" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/districts-bg.jpg')">
+<!-- PAGE 11: DISTRICTS -->
+<div id="page-11" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/districts-bg.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">DISTRICTS</h2>
         <div class="space-y-12">
